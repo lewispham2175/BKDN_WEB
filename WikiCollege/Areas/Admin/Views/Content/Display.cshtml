@@ -1,0 +1,18 @@
+﻿@model IEnumerable<WikiCollege.Models.EF.CONTENT>
+@{
+    ViewBag.Title = "Display";
+    Layout = "~/Areas/Admin/Views/Shared/_Layouts.cshtml";
+}
+
+@section title {
+    Display Content
+}
+<div class="container">
+    @foreach(var item in Model)
+    {
+        <h1 style="color:red">@Html.Raw(item.title)</h1> 
+        <p>
+            @Html.Raw(item.detail)
+        </p>
+    }
+</div>
