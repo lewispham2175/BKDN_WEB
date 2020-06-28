@@ -24,11 +24,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css?v=1.0" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body>  
-
         <!--Header-->
         <div class="container-header">
             <div class="header">
-                <a href="https://tuyensinhso.vn/">
+                <a href="/User/Home/Index">
                     <img class="float_left logo-pc" src="/Assets/User/img/web_logo.png" />
                 </a>
                 
@@ -63,6 +62,7 @@
             </div>
         </div>
         <!--End Header-->
+        <!--Box Search-->
         <div class="box_slide box_search">
             <h2 style="color:#ff310d">Tìm trường học mơ ước của bạn</h2>
             <form action="https://tuyensinhso.vn/tim-kiem.html" method="post">
@@ -71,40 +71,15 @@
                 <input type="hidden" name="task" value="search_school">
             </form>
         </div>
-        <div class="container-content">
-            <!--Left-->
-            <div class="detail-left ">
-                <div class="left_box">
-                    <div class="left_box_title">
-                        <i class="fas fa-file-invoice"></i>
-                        <a href="https://tuyensinhso.vn/tuyen-sinh-247.html">Tin tức</a>
-                    </div>
-                    <div class="list-news list-news-tab active" id="content-tab3067">
-                        <a href="https://tuyensinhso.vn/ban-tin/tuyen-sinh-2020-thi-sinh-van-tiep-tuc-duoc-dieu-chinh-nguyen-vong-01-lan-sau-khi-biet-diem-tot-nghiep-thpt-c52781.html">
-                            <img alt="Tuyển sinh 2020: Thí sinh vẫn tiếp tục được điều chỉnh nguyện vọng 01 lần sau khi biết điểm tốt nghiệp THPT" src="https://tuyensinhso.vn/timthumb.php?src=https://tuyensinhso.vn/images/contents/thumbnail-tuyen-sinh-2020-thi-sinh-van-tiep-tuc-duoc-dieu-chinh-nguyen-vong-01-lan-sau-khi-biet-diem-tot-nghiep-thpt-1589169842.jpg&h=200&w=300">
-                            <b>Tuyển sinh 2020: Thí sinh vẫn tiếp tục được điều chỉnh nguyện vọng 01 lần sau khi biết điểm tốt nghiệp THPT</b>
-                            <span><i class="far fa-clock"></i> <i>11:04 11/05/2020</i></span>
-                            <span class="no-display-mobile">Bộ GD&ĐT đã ban hành quy chế tuyển sinh 2020, không có nhiều thay đổi so với 2019.</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!--End Left-->
-            <div class="detail-space"></div>
-            <div class="detail-right">
-                <div class="right_box">
-                    <div class="left_box_title">
-                        <i class="fas fa-comments"></i> <span>Tin Mới</span>
-                    </div>
-                    <ul class="right_list_1">
-                        <li><a href="https://tuyensinhso.vn/ban-tin/cao-dang-y-duoc-sai-gon-mien-100-hoc-phi-cho-hoc-sinh-12-dang-ky-xet-tuyen-truc-tuyen-c52370.html">Cao đẳng Y Dược Sài Gòn miễn 100% kỳ 1 đến 15/9/2020  <img src="~/Assets/User/img/hot.gif" alt="" /></a> </li>
-                    </ul>
-                </div>
-            </div>
+        <!--End Box Search-->
+        <!--Main Content-->
+        <div>
             @RenderBody()
         </div>
+        <!--End Main Content-->
 
         <!-------------Footer----------->
+        <div>
             <footer>
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">

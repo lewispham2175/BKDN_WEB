@@ -290,9 +290,11 @@
                     <div class="copyright text-center my-auto">
                         <i>Contact us: wikicollege@gmail.com</i>
                         <p><p><span id="datetime"></span></p></p>
-                        <script>
+                        <script type="text/javascript">
                             var dt = new Date();
-                            document.getElementById("datetime").innerHTML = dt.toLocaleString();
+                            setInterval(function () {
+                                document.getElementById("datetime").innerHTML = dt.toLocaleString();
+                            }, 1000);
                         </script>
                     </div>
                 </div>

@@ -4,12 +4,12 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace WikiCollege.Areas.User.Controllers
+namespace WikiCollege.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: User/Home
-        public ActionResult Index()
+        // GET: Home
+        public ActionResult Index(int page = 1, int pageSize = 10)
         {
             return View();
         }

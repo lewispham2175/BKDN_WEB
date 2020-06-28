@@ -48,22 +48,6 @@ namespace WikiCollege.Areas.Admin.Controllers
         {
             var query = from CONTENT in db.CONTENT select CONTENT;
             var res = query.ToList();
-            /*List<CONTENT> contentList = db.CONTENT.Select(x => new CONTENT
-            {
-                content_ID = x.content_ID,
-                author_ID = x.author_ID,
-                meta_title = x.meta_title,
-                title = x.title,
-                desciption = x.desciption,
-                image = x.image,
-                detail = x.detail,
-                created_date = x.created_date,
-                status = x.status,
-                top_hot = x.top_hot,
-                view_count = x.view_count,
-                tags = x.tags
-            }).ToList();*/
-
             return View(res);
         }
     }
