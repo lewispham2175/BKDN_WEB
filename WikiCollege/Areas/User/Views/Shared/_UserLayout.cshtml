@@ -11,7 +11,7 @@
     <meta name="keywords" content="Thông Tin Tuyển Sinh 2020" />
     <meta name="description" content="Cung cấp thông tin tuyển sinh, tra cứu điểm thi, điểm chuẩn năm 2020 của các đại học cao đẳng trên toàn quốc." />
     <title>@RenderSection("title", required: true)</title>
-    <link rel="shortcut icon" href="https://tuyensinhso.vn/images/favicons/favicon-site-34-1540545259.png?v=1.0" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="~/Assets/User/img/wiki.ico">
     <meta name="robots" content="index, follow" />
     <meta http-equiv="content-language" content="vi" />
     <meta property="og:title" content="Tuyển sinh số | Thông Tin Tuyển Sinh 2020" />
@@ -31,6 +31,7 @@
                 <a href="https://tuyensinhso.vn/">
                     <img class="float_left logo-pc" src="/Assets/User/img/web_logo.png" />
                 </a>
+                
                 <div class="hotline_info">
                     <b>CỔNG THÔNG TIN TUYỂN SINH ĐẠI HỌC, CAO ĐẲNG</b>
                 </div>
@@ -38,7 +39,7 @@
             <div class="menu">
                 <ul class="list_menu">
                     <li class=" ">
-                        <a href="https://tuyensinhso.vn/">Trang chủ</a>
+                        <a href="https://tuyensinhso.vn/">Trang Chủ</a>
                     </li>
                     <li class=" ">
                         <a href="https://tuyensinhso.vn/dai-hoc-hoc-vien.html">Đại học</a>
@@ -53,7 +54,10 @@
                         <a href="https://tuyensinhso.vn/diem-chuan.html">Điểm Chuẩn</a>
                     </li>
                     <li class=" sub_menu">
-                        <a href="https://tuyensinhso.vn/ban-tin.html">Bản tin <i class="fas fa-caret-right"></i></a
+                        <a href="https://tuyensinhso.vn/ban-tin.html">Bản tin <i class="fas fa-caret-right"></i></a>
+                    </li>
+                    <li class=" "> 
+                        <a>Đăng nhập</a>
                     </li>
                 </ul>
             </div>
@@ -62,8 +66,8 @@
         <div class="box_slide box_search">
             <h2 style="color:#ff310d">Tìm trường học mơ ước của bạn</h2>
             <form action="https://tuyensinhso.vn/tim-kiem.html" method="post">
-                <input type="text" placeholder="Nhập tên trường mà bạn muốn học..." name="keyword">
-                <button type="submit" name="submit">Tìm kiếm</button>
+                <input type="text" placeholder="Nhập tên trường mà bạn muốn tìm kiếm..." name="keyword">
+                <button type="submit" name="submit"><b>Tìm kiếm</b></button>
                 <input type="hidden" name="task" value="search_school">
             </form>
         </div>
@@ -86,10 +90,11 @@
                 </div>
             </div>
             <!--End Left-->
+            <div class="detail-space"></div>
             <div class="detail-right">
                 <div class="right_box">
                     <div class="left_box_title">
-                        <i class="fas fa-comments"></i> <span>HOT NEWS</span>
+                        <i class="fas fa-comments"></i> <span>Tin Mới</span>
                     </div>
                     <ul class="right_list_1">
                         <li><a href="https://tuyensinhso.vn/ban-tin/cao-dang-y-duoc-sai-gon-mien-100-hoc-phi-cho-hoc-sinh-12-dang-ky-xet-tuyen-truc-tuyen-c52370.html">Cao đẳng Y Dược Sài Gòn miễn 100% kỳ 1 đến 15/9/2020  <img src="~/Assets/User/img/hot.gif" alt="" /></a> </li>

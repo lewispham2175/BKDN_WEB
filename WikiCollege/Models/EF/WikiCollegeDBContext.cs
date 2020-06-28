@@ -1,10 +1,10 @@
-namespace WikiCollege.Models.EF
-{
+
     using System;
     using System.Data.Entity;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
-
+namespace WikiCollege.Models.EF
+{
     public partial class WikiCollegeDBContext : DbContext
     {
         public WikiCollegeDBContext()

@@ -1,11 +1,10 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Entity.Spatial;
 namespace WikiCollege.Models.EF
 {
-    using System;
-    using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-    using System.ComponentModel.DataAnnotations.Schema;
-    using System.Data.Entity.Spatial;
-
     [Table("ACCOUNTS")]
     public partial class ACCOUNT
     {
@@ -17,6 +16,7 @@ namespace WikiCollege.Models.EF
             CONTENT_SAVED = new HashSet<CONTENT_SAVED>();
             MAJOR_SAVED = new HashSet<MAJOR_SAVED>();
         }
+
 
         [Key]
         public int acc_ID { get; set; }
@@ -59,3 +59,4 @@ namespace WikiCollege.Models.EF
         public virtual ICollection<MAJOR_SAVED> MAJOR_SAVED { get; set; }
     }
 }
+

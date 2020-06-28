@@ -1,12 +1,12 @@
-namespace WikiCollege.Models.EF
-{
+
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
-
-    [Table("MAJOR")]
+    namespace WikiCollege.Models.EF
+    {
+        [Table("MAJOR")]
     public partial class MAJOR
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
