@@ -2728,6 +2728,9 @@
     <Content Include="Assets\User\img\hot.gif" />
     <Content Include="Assets\User\img\web_logo.png" />
     <Content Include="Assets\User\img\wiki.ico" />
+    <Content Include="Assets\User\js1\jquery-1.10.2.js" />
+    <Content Include="Assets\User\js1\jquery.bxslider.min.js" />
+    <Content Include="Assets\User\js1\script.js" />
     <Content Include="Content\PagedList.css" />
     <Content Include="Data\images\class.png" />
     <Content Include="Data\_thumbs\Images\class.png" />
@@ -4004,8 +4007,8 @@
     <Content Include="Assets\Admin\js\plugins\ckfinder\plugins\fileeditor\codemirror\LICENSE" />
     <Content Include="Assets\Admin\js\plugins\ckfinder\userfiles\.htaccess" />
     <Content Include="scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\DaiHoc\Index.cshtml" />
     <Content Include="Views\Home\Index_Home.cshtml" />
+    <Content Include="Views\DaiHoc\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
