@@ -13,10 +13,39 @@ namespace WikiCollege.Areas.Admin.Controllers
     public class AccountController : Controller
     {
         // GET: Admin/Account
-        public ActionResult Index()
+        public ActionResult Index(int page = 1, int pageSize = 10)
         {
-            return View();
+            var dao = new AccountDao();
+            var model = dao.ListAllPaging(page, pageSize);
+            return View(model);
         }
+
+        public ActionResult Edit(int id)
+        {
+            var acc = new AccountDao().ViewDetail(id);
+            var num = acc.acc_ID;
+            return View(acc);
+        }
+
+        [HttpPost]
+        public ActionResult Edit(ACCOUNT acc)
+        {
+            var x = acc.acc_ID;
+            if (ModelState.IsValid)
+            {
+                var dao = new AccountDao();
+                bool res = dao.Update(acc);
+                if (res)
+                {
+                    ModelState.AddModelError("", "Cập nhật thành công!");
+                    return RedirectToAction("Edit", "Account");
+                }
+                else
+                    ModelState.AddModelError("", "Cập nhật không thành công!");
+            }            
+            return View("Index");
+        }
+
         [HttpGet]
         public ActionResult Create()
         {
@@ -58,7 +87,7 @@ namespace WikiCollege.Areas.Admin.Controllers
                 throw;
             }
 
-            return View("Create");  
+            return View("Index");  
         }
     }
 }

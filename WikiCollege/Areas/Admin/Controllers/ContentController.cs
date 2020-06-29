@@ -16,6 +16,7 @@ namespace WikiCollege.Areas.Admin.Controllers
             return View();
         }
 
+        [HttpGet]
         public ActionResult Create()
         {
             return View();
