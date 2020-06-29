@@ -6,10 +6,10 @@ using System.Web.Mvc;
 
 namespace WikiCollege.Controllers
 {
-    public class DaiHocController : Controller
+    public class DiemChuanController : Controller
     {
-        // GET: DaiHoc
-        public ActionResult Index_DH()
+        // GET: DiemChuan
+        public ActionResult Index_DC()
         {
             return View();
         }

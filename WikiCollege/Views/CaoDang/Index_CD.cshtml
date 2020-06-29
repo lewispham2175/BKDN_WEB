@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+@section title {
+    COLLEGE-Cao Đẳng
+}
+<script src="~/Assets/User/js/jquery-1.10.2.js"></script>
+<script src="~/Assets/User/js/jquery.bxslider.min.js"></script>
+<script src="~/Assets/User/js/script.js"></script>
+<div>
+    <!--Left-->
+    <div class="detail-left mgt10">
+        <div class="left_box">
+        </div>
+        <div class="left_box ">
+            <div class="select-data wl100">
+
+                <select class="sl_nganh" id="sl_linh_vuc">
+                    <option value="">Lựa chọn khu vực</option>
+                    <option value="lv2484">CĐ - Công lập</option>
+                    <option value="lv2238">Khu vực</option>
+                </select>
+
+                <select class="sl_nganh" id="sl_oder">
+                    <option value="">---------Thứ tự hiển thị--------</option>
+                    <option value="1">A -> Z</option>
+                    <option value="2">Z -> A</option>
+                </select>
+            </div>
+
+            <div class="w100 list-data" id="lv2238">
+                <div class="left_box_title left_box_title_1 left_box_title_2">
+                    <span><a href="https://tuyensinhso.vn/c2238/khu-vuc-he-cao-dang.html">Khu vực</a></span>
+                </div>
+                <div class="list-news list-group" id="lv1-nn1">
+                    <a href="https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-da-nang-c13986.html">
+                        <span>CĐ khu vực Đà Nẵng</span>
+                        <span></span>
+                    </a>
+                    <a href="https://tuyensinhso.vn/khu-vuc-he-cao-dang/khu-vuc-tp-hcm-c13984.html">
+                        <span>CĐ khu vực TP. HCM</span>
+                        <span></span>
+                    </a>
+                    <a href="https://tuyensinhso.vn/khu-vuc-he-cao-dang/cd-khu-vuc-ha-noi-c13982.html">
+                        <span>CĐ khu vực Hà Nội</span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+            <div class="w100 list-data" id="lv2484">
+                <div class="left_box_title left_box_title_1 left_box_title_2">
+                    <span><a href="https://tuyensinhso.vn/c2484/cd-cong-lap.html">CĐ - Công lập</a></span>
+                </div>
+                <div class="list-news list-group" id="lv1-nn1">
+                    <a href="https://tuyensinhso.vn/cd-cong-lap/cd-cong-lap-khu-vuc-tphcm-c16738.html">
+                        <span>CĐ Công lập khu vực TP.HCM</span>
+                        <span></span>
+                    </a>
+                    <a href="https://tuyensinhso.vn/cd-cong-lap/cd-cong-lap-khu-vuc-ha-noi-c16736.html">
+                        <span>CĐ Công lập khu vực Hà Nội</span>
+                        <span></span>
+                    </a>
+                    <a href="https://tuyensinhso.vn/cd-cong-lap/cd-cong-lap-khu-vuc-da-nang-c16734.html">
+                        <span>CĐ Công lập khu vực Đà Nẵng</span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--End Left-->

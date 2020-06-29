@@ -10,7 +10,7 @@ namespace WikiCollege.Controllers
     public class HomeController : Controller
     {
         // GET: Home
-        public ActionResult Index(int page = 1, int pageSize = 10)
+        public ActionResult Index_Home(int page = 1, int pageSize = 10)
         {
             var dao = new ContentDao();
             var model = dao.ListAllPaging(page, pageSize);
