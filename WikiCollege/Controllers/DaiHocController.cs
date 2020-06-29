@@ -9,7 +9,7 @@ namespace WikiCollege.Controllers
     public class DaiHocController : Controller
     {
         // GET: DaiHoc
-        public ActionResult Index()
+        public ActionResult Index_DH()
         {
             return View();
         }

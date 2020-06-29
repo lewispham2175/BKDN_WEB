@@ -1,0 +1,121 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+@section title {
+    COLLEGE-Ngành Nghề
+}
+<script src="~/Assets/User/js/jquery-1.10.2.js"></script>
+<script src="~/Assets/User/js/jquery.bxslider.min.js"></script>
+<script src="~/Assets/User/js/script.js"></script>  
+<div>
+    <!--Left-->
+    <div class="detail-left mgt10">
+        <div class="left_box ">
+            <div class="select-data wl100">
+                <select class="sl_nganh" id="sl_oder">
+                    <option value="">---------Thứ tự hiển thị--------</option>
+                    <option value="1">A -> Z</option>
+                    <option value="2">Z -> A</option>
+                </select>
+            </div>
+
+            <!--Left-->
+            <div class="w100 list-data" id="lv2538">
+                <div class="list-news list-group" id="lv1-nn1">
+                    <a href="https://tuyensinhso.vn/nhom-nganh-dao-tao/nganh-y-da-khoa-c16836.html">
+                        <span>Ngành Y đa khoa</span>
+                        <span></span>
+                    </a>
+                    <a href="https://tuyensinhso.vn/nhom-nganh-dao-tao/nganh-dieu-duong-c16834.html">
+                        <span>Ngành Điều dưỡng</span>
+                        <span></span>
+                    </a>
+                    <a href="https://tuyensinhso.vn/nhom-nganh-dao-tao/nganh-cong-nghe-thuc-pham-c16938.html">
+                        <span>Ngành Công nghệ thực phẩm</span>
+                        <span></span>
+                    </a>
+                    <a href="https://tuyensinhso.vn/nhom-nganh-dao-tao/nganh-su-pham-hoa-hoc-c16018.html">
+                        <span>Ngành Sư phạm Hóa học</span>
+                        <span></span>
+                    </a>
+                    <a href="https://tuyensinhso.vn/nhom-nganh-dao-tao/nganh-su-pham-vat-ly-c16014.html">
+                        <span>Ngành Sư phạm Vật lý</span>
+                        <span></span>
+                    </a>
+                    <a href="https://tuyensinhso.vn/nhom-nganh-dao-tao/nganh-su-pham-toan-hoc-c16000.html">
+                        <span>Ngành Sư phạm Toán học</span>
+                        <span></span>
+                    </a>
+                    <a href="https://tuyensinhso.vn/nhom-nganh-dao-tao/nganh-ky-thuat-phan-mem-c16378.html">
+                        <span>Ngành Kỹ thuật phần mềm</span>
+                        <span></span>
+                    </a>
+                    <a href="https://tuyensinhso.vn/nhom-nganh-dao-tao/nganh-khoa-hoc-may-tinh-c16372.html">
+                        <span>Ngành Khoa học máy tính</span>
+                        <span></span>
+                    </a>
+                    <a href="https://tuyensinhso.vn/nhom-nganh-dao-tao/nganh-an-toan-thong-tin-c16370.html">
+                        <span>Ngành An toàn thông tin</span>
+                        <span></span>
+                    </a>
+                    <a href="https://tuyensinhso.vn/nhom-nganh-dao-tao/nganh-robot-va-tri-tue-nhan-tao-c19538.html">
+                        <span>Ngành Robot và Trí tuệ nhân tạo</span>
+                        <span></span>
+                    </a>
+                    <a href="https://tuyensinhso.vn/nhom-nganh-dao-tao/nganh-kinh-te-doi-ngoai-c26171.html">
+                        <span>Ngành Kinh tế đối ngoại</span>
+                        <span></span>
+                    </a>
+                    <a href="https://tuyensinhso.vn/nhom-nganh-dao-tao/nganh-kinh-doanh-thuong-mai-c16566.html">
+                        <span>Ngành Kinh doanh thương mại</span>
+                        <span></span>
+                    </a>
+                    <a href="https://tuyensinhso.vn/nhom-nganh-dao-tao/nganh-he-thong-thong-tin-quan-ly-c16560.html">
+                        <span>Ngành Hệ thống thông tin quản lý</span>
+                        <span></span>
+                    </a>
+                    <a href="https://tuyensinhso.vn/nhom-nganh-dao-tao/nganh-quan-ly-du-an-c16558.html">
+                        <span>Ngành Quản lý dự án</span>
+                        <span></span>
+                    </a>
+                    <a href="https://tuyensinhso.vn/nhom-nganh-dao-tao/nganh-quan-tri-nhan-luc-c16550.html">
+                        <span>Ngành Quản trị nhân lực</span>
+                        <span></span>
+                    </a>
+                    <a href="https://tuyensinhso.vn/nhom-nganh-dao-tao/nganh-tai-chinh-ngan-hang-c16516.html">
+                        <span>Ngành Tài chính - Ngân hàng</span>
+                        <span></span>
+                    </a>
+                    <a href="https://tuyensinhso.vn/nhom-nganh-dao-tao/nganh-kinh-doanh-quoc-te-c16294.html">
+                        <span>Ngành Kinh doanh quốc tế</span>
+                        <span></span>
+                    </a>
+                    <a href="https://tuyensinhso.vn/nhom-nganh-dao-tao/nganh-marketing-c16292.html">
+                        <span>Ngành Marketing</span>
+                        <span></span>
+                    </a>
+                    <a href="https://tuyensinhso.vn/nhom-nganh-dao-tao/nganh-thuong-mai-dien-tu-c16286.html">
+                        <span>Ngành Thương mại điện tử</span>
+                        <span></span>
+                    </a>
+                    <a href="https://tuyensinhso.vn/nhom-nganh-dao-tao/nganh-quan-tri-kinh-doanh-c16284.html">
+                        <span>Ngành Quản trị kinh doanh</span>
+                        <span></span>
+                    </a>
+                    <a href="https://tuyensinhso.vn/nhom-nganh-dao-tao/nganh-ky-thuat-nhiet-c16804.html">
+                        <span>Ngành Kỹ thuật nhiệt</span>
+                        <span></span>
+                    </a>
+                    <a href="https://tuyensinhso.vn/nhom-nganh-dao-tao/nganh-ky-thuat-co-dien-tu-c16802.html">
+                        <span>Ngành Kỹ thuật cơ điện tử</span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--End Left-->
