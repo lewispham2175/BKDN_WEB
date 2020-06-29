@@ -1,4 +1,6 @@
-﻿
+﻿@model PagedList.IPagedList<WikiCollege.Models.EF.CONTENT>
+@using PagedList.Mvc;
+
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_UserLayout.cshtml";
@@ -8,7 +10,6 @@
     WIKI COLLEGE
 }
 
-<div>
     <!--Left-->
     <div class="detail-left ">
         <div class="left_box">
@@ -17,18 +18,19 @@
                 <a>Tin tức</a>
             </div>
             <div class="list-news list-news-tab active" id="content-tab3067">
-                <a href="https://tuyensinhso.vn/ban-tin/tuyen-sinh-2020-thi-sinh-van-tiep-tuc-duoc-dieu-chinh-nguyen-vong-01-lan-sau-khi-biet-diem-tot-nghiep-thpt-c52781.html">
-                    
-                    <img alt="Tuyển sinh 2020: Thí sinh vẫn tiếp tục được điều chỉnh nguyện vọng 01 lần sau khi biết điểm tốt nghiệp THPT" src="https://tuyensinhso.vn/timthumb.php?src=https://tuyensinhso.vn/images/contents/thumbnail-tuyen-sinh-2020-thi-sinh-van-tiep-tuc-duoc-dieu-chinh-nguyen-vong-01-lan-sau-khi-biet-diem-tot-nghiep-thpt-1589169842.jpg&h=200&w=300">
-                    <b>Tuyển sinh 2020: Thí sinh vẫn tiếp tục được điều chỉnh nguyện vọng 01 lần sau khi biết điểm tốt nghiệp THPT</b>
-                    <span><i class="far fa-clock"></i> <i>11:04 11/05/2020</i></span>
-                    <span class="no-display-mobile">Bộ GD&ĐT đã ban hành quy chế tuyển sinh 2020, không có nhiều thay đổi so với 2019.</span>
-                </a>
+                @foreach (var item in Model)
+                {
+                    <a href="https://tuyensinhso.vn/ban-tin/tuyen-sinh-2020-thi-sinh-van-tiep-tuc-duoc-dieu-chinh-nguyen-vong-01-lan-sau-khi-biet-diem-tot-nghiep-thpt-c52781.html">
+                        <img alt="Tuyển sinh 2020" src="/Data/images/class.png" width="100" height="100">
+                        <b>@item.title</b>
+                        <span><i class="far fa-clock"></i> <i>@item.created_date</i></span>
+                        <span class="no-display-mobile">@item.desciption</span>
+                    </a>
+                }
+                @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
             </div>
         </div>
     </div>
     <!--End Left-->
-    <div class="detail-space"></div>
     
-</div>
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WikiCollege.Models.Dao;
 
 namespace WikiCollege.Controllers
 {
@@ -11,7 +12,9 @@ namespace WikiCollege.Controllers
         // GET: Home
         public ActionResult Index_Home(int page = 1, int pageSize = 10)
         {
-            return View();
+            var dao = new ContentDao();
+            var model = dao.ListAllPaging(page, pageSize);
+            return View(model);
         }
     }
 }

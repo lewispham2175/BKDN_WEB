@@ -35,10 +35,10 @@
     </script>
 }
 
-@using (Html.BeginForm()) 
+@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
@@ -77,7 +77,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.image, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.TextBoxFor(model => model.image, new { htmlAttributes = new { @class = "form-control" , @id = "txtImage" }, id = "txtImage" })
+                @Html.TextBoxFor(model => model.image, new { htmlAttributes = new { @class = "form-control", @id = "txtImage" }, id = "txtImage" })
                 <a id="btnSelectImage" href="#">Chọn ảnh</a>
                 @Html.ValidationMessageFor(model => model.image, "", new { @class = "text-danger" })
             </div>
@@ -86,19 +86,11 @@
         <div class="form-group">
             @Html.LabelFor(model => model.detail, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.TextAreaFor(model => model.detail, new { @id= "editor1" , @class = "form-control" })
+                @Html.TextAreaFor(model => model.detail, new { @id = "editor1", @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.detail, "", new { @class = "text-danger" })
                 <script>
                     CKEDITOR.replace('editor1', { customConfig: "/scripts/ckeditor/config.js" });
                 </script>
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.created_date, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.created_date, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.created_date, "", new { @class = "text-danger" })
             </div>
         </div>
 
@@ -115,7 +107,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.top_hot, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.top_hot, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.TextBoxFor(model => model.top_hot, new { type = "datetime-local"})
                 @Html.ValidationMessageFor(model => model.top_hot, "", new { @class = "text-danger" })
             </div>
         </div>
