@@ -4003,8 +4003,8 @@
     <Content Include="Assets\Admin\js\plugins\ckfinder\plugins\fileeditor\codemirror\LICENSE" />
     <Content Include="Assets\Admin\js\plugins\ckfinder\userfiles\.htaccess" />
     <Content Include="scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\DaiHoc\Index.cshtml" />
+    <Content Include="Views\Home\Index_Home.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
