@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WikiCollege.Models.Dao;
 using WikiCollege.Models.EF;
 
 namespace WikiCollege.Areas.Admin.Controllers
 {
-    public class ContentController : Controller
+    public class ContentController : BaseController
     {
         // GET: Admin/Content
         public ActionResult Index()
@@ -25,22 +26,8 @@ namespace WikiCollege.Areas.Admin.Controllers
         [HttpPost]
         public ActionResult Create(CONTENT ct)
         {
-            if (ModelState.IsValid)
-            {
-                CONTENT obj = new CONTENT();
-                obj.author_ID = 1;
-                obj.meta_title = ct.meta_title;
-                obj.title = ct.title;
-                obj.desciption = ct.desciption;
-                obj.detail = ct.detail;
-                obj.created_date = DateTime.Today;
-                obj.status = ct.status;
-                obj.top_hot = DateTime.Today.AddDays(2);
-                obj.view_count = ct.view_count;
-                obj.tags = ct.tags;
-                db.CONTENT.Add(obj);
-                db.SaveChanges();
-            }
+            var dao = new ContentDao();
+            int inserted = dao.Insert(ct);
             return View();
         }
 

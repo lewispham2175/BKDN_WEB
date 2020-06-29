@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -22,26 +22,34 @@ namespace WikiCollege.Models.EF
         public int acc_ID { get; set; }
 
         [StringLength(10)]
+        [Display(Name = "Phân quyền")]
         public string acc_type { get; set; }
 
         [StringLength(20)]
+        [Display(Name ="Tên truy cập")]
         public string user_name { get; set; }
 
-        [StringLength(20)]
+        [StringLength(100)]
+        [Display(Name = "Mật khẩu")]
         public string pass_word { get; set; }
 
         [StringLength(50)]
+        [Display(Name = "Họ và tên")]
         public string full_name { get; set; }
 
         [StringLength(50)]
+        [Display(Name = "Địa chỉ email")]
         public string email { get; set; }
 
         [StringLength(50)]
+        [Display(Name = "Nơi ở hiện tại")]
         public string address { get; set; }
 
         [StringLength(20)]
+        [Display(Name = "Số điện thoại")]
         public string phone { get; set; }
 
+        [Display(Name = "Trạng thái")]
         public bool? status { get; set; }
 
         public DateTime? created_date { get; set; }
